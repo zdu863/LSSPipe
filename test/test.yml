@@ -1,0 +1,19 @@
+
+modules: lsspipe
+
+stages:
+    - name: LSSPipeStage1
+      nprocess: 1
+
+output_dir: ./outputs
+
+inputs:
+    some_input_tag: test/input_data.txt
+
+resume: False
+log_dir: ./test/logs
+pipeline_log: ./test/log.txt
+config: test/config.yml
+
+
+launcher: local
